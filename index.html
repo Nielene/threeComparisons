@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<script>
+		var input = parseInt( prompt ("How old are you?") );
+		var input2 = parseInt( prompt ("How old is your mother?") );
+		var input3 = parseInt( prompt ("How old is your father?") );
+
+		if (input < input2 && input < input3) {
+			console.log("You are the youngest.");
+		}else if(input2 < input && input2 < input3){
+			console.log("Your mother is the youngest.");
+		}else if(input3 < input && input3<input2){
+			console.log ("Your dad is the youngest.");
+		}else{
+			console.log("Are you sure?");
+		}
+	</script>
+
+</body>
+</html>
