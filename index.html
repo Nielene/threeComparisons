@@ -7,16 +7,16 @@
 
 
 	<script>
-		var input = parseInt( prompt ("How old are you?") );
-		var input2 = parseInt( prompt ("How old is your mother?") );
-		var input3 = parseInt( prompt ("How old is your father?") );
+		var input = parseInt( prompt ("Give me a number.") );
+		var input2 = parseInt( prompt ("Give me a second number.") );
+		var input3 = parseInt( prompt ("Give me a third number.") );
 
-		if (input < input2 && input < input3) {
-			console.log("You are the youngest.");
-		}else if(input2 < input && input2 < input3){
-			console.log("Your mother is the youngest.");
-		}else if(input3 < input && input3<input2){
-			console.log ("Your dad is the youngest.");
+		if (input > input2 && input > input3) {
+			console.log(input + " is the largest number.");
+		}else if(input2 > input && input2 > input3){
+			console.log(input2 + " is the largest number.");
+		}else if(input3 > input && input3 > input2){
+			console.log (input3 + " is the largest number.");
 		}else{
 			console.log("Are you sure?");
 		}
